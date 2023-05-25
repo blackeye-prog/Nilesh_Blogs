@@ -10,9 +10,7 @@ export default function App() {
 
   
   useEffect( () => {
-    {
      const {fetchBlogPost} = useContext(AppContext);
-    }
     fetchBlogPost();
   },[]);
   return (

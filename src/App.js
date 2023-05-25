@@ -8,9 +8,9 @@ import './App.css'
 
 export default function App() {
 
-  
+   const {fetchBlogPost} = useContext(AppContext);
   useEffect( () => {
-     const {fetchBlogPost} = useContext(AppContext);
+    
     fetchBlogPost();
   },[]);
   return (
